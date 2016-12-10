@@ -310,9 +310,7 @@ please contribute here.</p>
 
         // Process donation
         $(document).on('click', '#submit-donation', function(e) {
-            e.preventDefault();
-            var donationAmount = parseInt($('#donation-amount').val()) * 100;
-            document.write('<iframe src="https://electors-trust-2.appspot.com/payment-form/?amount=' + donationAmount + '" width="100%" height="100%" style="width: 100%; height: 100%; border: none;"></iframe>');
+            window.location = 'https://citizenequality.nationbuilder.com/donate';
         });
 
         // Resize elements for mobile
