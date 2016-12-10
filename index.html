@@ -276,7 +276,7 @@
 help us provide this support to Electors,
 please contribute here.</p>
                 <p>
-                    <a href="javascript:void(0);" class="donate-button">Donate</a>
+                    <a href="https://citizenequality.nationbuilder.com/donate" class="donate-button">Donate</a>
                 </p>
                 <p class="colophon">The Electors Trust is a project of <a href="http://equalcitizens.us" target="_blank">EqualCitizens.US</a></p>
             </div>
@@ -292,27 +292,6 @@ please contribute here.</p>
     <script>
 
     $(document).ready(function() {
-        // Handle donate button clicks
-        $('.donate-button').click(function() {
-            $(this).blur();
-            // Construct modal contents
-            var output = '<div class="modal-contents">';
-            output += '<form>';
-            output += '<p>How much would you like to donate?</p>';
-            output += '<p>$<input type="number" step="1" min="1" max="1000000" id="donation-amount" value="50"></p>';
-            output += '<p><button class="btn-success" id="submit-donation">Make donation</button></p>';
-            output += '</form>';
-            output += '</div>';
-            output += '';
-            // Trigger modal
-            $.featherlight(output);
-        });
-
-        // Process donation
-        $(document).on('click', '#submit-donation', function(e) {
-            window.location = 'https://citizenequality.nationbuilder.com/donate';
-        });
-
         // Resize elements for mobile
         function mobileResize() {
             var currentWindowWidth = $(window).width();
